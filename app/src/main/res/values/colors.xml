@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#D5EFFE</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorText">#2DA3E0</color>
+    <color name="olympic">#008ECC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blackshade">#555555</color>
+    <color name="red">#E60026</color>
+    <color name="gray">#D4D4D4</color>
+    <color name="tv_back">#7294F6</color>
+    <color name="green">#66CD00</color>
+    <color name="grayshade">#999999</color>
+    <color name="lightgary">#D0D3DC</color>
+    <color name="bottombar">#E7F3F9</color>
+    <color name="skyblue">#D0EDFE</color>
+    <color name="color_progress_dialog">#35D4F1</color>
+</resources>

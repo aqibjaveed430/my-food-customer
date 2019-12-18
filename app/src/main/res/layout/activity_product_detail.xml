@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="e.homekitchen.customer.Activity.ProductDetailActivity">    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bar">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_back">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Product Details"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/maincontent"
+        android:layout_below="@+id/top"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/my_food"/>
+
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/iv_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/tv_product_type"
+                android:layout_below="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Type"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_t"
+                android:layout_below="@+id/tv_product_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimum time required: "
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:id="@+id/tv_min_time"
+                android:layout_toRightOf="@id/tv_t"
+                android:layout_below="@+id/tv_product_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Minute "
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:id="@+id/tv_d"
+                android:layout_below="@+id/tv_min_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount : "
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_toRightOf="@+id/tv_d"
+                android:layout_below="@+id/tv_min_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" %"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/iv_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/tv_veg_type"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tv_price"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="Veg"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/red"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rv1"
+        android:layout_below="@+id/maincontent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_specification"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_below="@id/rv_specification"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@color/blackshade"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rv2"
+        android:layout_below="@+id/rv1"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_attribute"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_below="@id/rv_attribute"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/blackshade"/>
+    </RelativeLayout>
+
+</RelativeLayout>
